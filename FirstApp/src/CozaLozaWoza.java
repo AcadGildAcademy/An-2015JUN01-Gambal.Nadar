@@ -26,11 +26,7 @@ public class CozaLozaWoza {
 		else if (i % 7==0){
 			System.out.print(" Woza ");
 		}
-		
-		
-		
-		
-			
+					
 		else
 			System.out.print(" " + i);
 
