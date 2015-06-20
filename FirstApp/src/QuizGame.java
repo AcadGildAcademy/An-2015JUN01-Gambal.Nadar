@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class QuizGame{
 	
 	char answer;
-	int result;
+	int result=0;
 	Scanner inputScanner = new Scanner(System.in);
 	public void startGame(){
 		
