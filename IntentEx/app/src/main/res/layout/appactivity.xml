@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center_vertical"
+        android:weightSum="4">
+
+        <Button
+            android:layout_width="250dp"
+            android:layout_height="25dp"
+            android:text="Specific App"
+            android:id="@+id/specificapp_bt"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1" />
+
+        <Button
+            android:layout_width="250dp"
+            android:layout_height="25dp"
+            android:text="Developer"
+            android:id="@+id/Developer_bt"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1" />
+
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:id="@+id/search_et"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0" />
+
+        <Button
+            android:layout_width="250dp"
+            android:layout_height="25dp"
+            android:text="Search"
+            android:id="@+id/search_bt"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1" />
+    </LinearLayout>
+</RelativeLayout>

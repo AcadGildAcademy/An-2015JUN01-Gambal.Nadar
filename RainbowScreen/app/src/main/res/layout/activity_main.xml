@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/menu1"
+        android:gravity="center"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:layout_weight="2"
+        android:background="@color/Red"
+        android:id="@+id/textView"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/menu2"
+        android:gravity="center"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:layout_weight="2"
+        android:id="@+id/textView2"
+        android:layout_gravity="center_horizontal"
+        android:background="#ffff9609" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/menu3"
+        android:gravity="center"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:layout_weight="2"
+        android:id="@+id/textView3"
+        android:layout_gravity="center_horizontal"
+        android:background="#fffffd12" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/menu4"
+        android:gravity="center"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:layout_weight="2"
+        android:id="@+id/textView4"
+        android:layout_gravity="center_horizontal"
+        android:background="#ff73bb16" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/menu5"
+        android:gravity="center"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:layout_weight="2"
+        android:id="@+id/textView5"
+        android:layout_gravity="center_horizontal"
+        android:autoText="false"
+        android:background="#ff3996ff" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/menu6"
+        android:gravity="center"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:layout_weight="2"
+        android:id="@+id/textView6"
+        android:layout_gravity="center_horizontal"
+        android:background="#ff7503ac" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/menu7"
+        android:gravity="center"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:id="@+id/textView7"
+        android:layout_weight="4"
+        android:layout_gravity="center_horizontal"
+        android:autoText="false"
+        android:background="#ffbf68ff" />
+</LinearLayout>

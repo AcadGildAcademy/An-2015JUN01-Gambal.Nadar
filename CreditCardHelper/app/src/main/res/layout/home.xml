@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:text="Credit Card Organiser"
+            android:textColor="#ffffff"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:id="@+id/textView"
+            android:background="#000000" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:text=" "
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:id="@+id/textView"
+            android:background="#007F9B" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:background="#007F9B"
+        android:padding="15dp"
+        android:layout_height="wrap_content"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="Enter Credit Card Balance"
+            android:textColor="#ffffff"
+            android:layout_weight="1"
+            android:id="@+id/textView2" />
+
+        <EditText
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:inputType="number|textPersonName"
+            android:layout_marginLeft="15dp"
+            android:id="@+id/cc_open_bal"
+            android:layout_weight="2"
+            android:background="#ffffff"
+            android:layout_gravity="start" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:background="#007F9B"
+        android:padding="15dp"
+        android:layout_height="wrap_content"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="Yearly Interest Rate(%)"
+            android:textColor="#ffffff"
+            android:layout_weight="1"
+            android:id="@+id/textView3" />
+
+        <EditText
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:inputType="number|textPersonName"
+            android:text=" "
+            android:ems="10"
+            android:layout_marginLeft="15dp"
+            android:id="@+id/r_int"
+            android:layout_weight="1"
+            android:background="#ffffff"
+            android:gravity="left"
+            android:layout_gravity="left" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:background="#007F9B"
+        android:padding="15dp"
+        android:layout_height="wrap_content"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="Minimum Amount (Rs)"
+            android:textColor="#ffffff"
+            android:layout_weight="1"
+            android:id="@+id/textView4" />
+
+        <EditText
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:inputType="number|textPersonName"
+            android:text=" "
+            android:ems="10"
+            android:layout_marginLeft="15dp"
+            android:id="@+id/min_amt"
+            android:layout_weight="1"
+            android:background="#ffffff"
+            android:gravity="left"
+            android:layout_gravity="left" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:background="#007F9B"
+        android:padding="15dp"
+        android:layout_height="wrap_content"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="Final card Balance (Rs)"
+            android:textColor="#ffffff"
+            android:layout_weight="1"
+            android:id="@+id/textView5" />
+
+        <EditText
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text=" "
+            android:ems="10"
+            android:layout_marginLeft="15dp"
+            android:id="@+id/final_bal"
+            android:layout_weight="1"
+            android:background="#ffffff"
+            android:gravity="left"
+            android:focusable="false"
+            android:cursorVisible="false"
+            android:layout_gravity="left" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:background="#007F9B"
+        android:padding="15dp"
+        android:layout_height="wrap_content"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="Month Remaining (Rs)"
+            android:textColor="#ffffff"
+            android:layout_weight="1"
+            android:id="@+id/textView6" />
+
+        <EditText
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text=" "
+            android:ems="10"
+            android:layout_marginLeft="15dp"
+            android:id="@+id/r_month"
+            android:layout_weight="1"
+            android:background="#ffffff"
+            android:gravity="left"
+            android:focusable="false"
+            android:cursorVisible="false"
+            android:layout_gravity="left" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:background="#007F9B"
+        android:padding="15dp"
+        android:layout_height="wrap_content"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="Interest Paid  (Rs)"
+            android:textColor="#ffffff"
+            android:layout_weight="1"
+            android:id="@+id/textView7" />
+
+        <EditText
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text=" "
+            android:ems="10"
+            android:layout_marginLeft="15dp"
+            android:id="@+id/int_paid"
+            android:layout_weight="1"
+            android:background="#ffffff"
+            android:gravity="left"
+            android:focusable="false"
+            android:cursorVisible="false"
+            android:layout_gravity="left" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:background="#007F9B"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_height="60dp"
+        android:weightSum="1">
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="35dp"
+            android:text="Compute"
+            android:gravity="center"
+            android:id="@+id/bt_compute"
+            android:background="#0098DA"
+            android:textColor="#ffffff"
+            android:layout_gravity="center_horizontal" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:background="#007F9B"
+        android:layout_gravity="center"
+        android:gravity="center"
+
+        android:layout_height="fill_parent"
+        android:weightSum="1">
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="35dp"
+            android:text="Cancel"
+            android:id="@+id/bt_cancel"
+            android:background="#0098DA"
+            android:textColor="#ffffff"
+            android:layout_gravity="center_horizontal" />
+    </LinearLayout>
+
+</LinearLayout>

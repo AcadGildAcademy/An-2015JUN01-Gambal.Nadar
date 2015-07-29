@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">IntentApp</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="apps">Apps</string>
+    <string name="vibrate">Search</string>
+</resources>
