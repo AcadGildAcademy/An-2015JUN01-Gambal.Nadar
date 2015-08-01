@@ -1,13 +1,19 @@
 package com.example.gambal.intentex;
 
+import android.app.Activity;
+import android.content.Context;
+import android.content.Intent;
+import android.os.Vibrator;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 
-public class MainActivity extends ActionBarActivity {
+public class MainActivity extends Activity implements View.OnClickListener {
     Button app_bt;
     Button setting_bt;
     Button vibrate_bt;
@@ -17,6 +23,17 @@ public class MainActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+
+        app_bt = (Button) findViewById(R.id.app_bt);
+        setting_bt = (Button) findViewById(R.id.setting_bt);
+        vibrate_bt = (Button) findViewById(R.id.vibrate_bt);
+
+        app_bt.setOnClickListener(this);
+        setting_bt.setOnClickListener(this);
+        vibrate_bt.setOnClickListener(this);
+
+
     }
 
 
@@ -40,5 +57,32 @@ public class MainActivity extends ActionBarActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    public void onClick(View v) {
+
+        switch (v.getId()) {
+            case R.id.app_bt:
+                Intent appintent = new Intent(MainActivity.this,appactivity.class);
+                startActivity(appintent);
+                //Toast.makeText(MainActivity.this,"App", Toast.LENGTH_SHORT).show();
+
+                break;
+
+            case R.id.setting_bt:
+                Intent settingsintent = new Intent(MainActivity.this,settingsactivity.class);
+                startActivity(settingsintent);
+                Toast.makeText(MainActivity.this,"Setting", Toast.LENGTH_SHORT).show();
+                break;
+
+            case R.id.vibrate_bt:
+                Vibrator vibrator = (Vibrator) this.getSystemService(Context.VIBRATOR_SERVICE);
+                vibrator.vibrate(500);
+                Toast.makeText(MainActivity.this,"Vibrate", Toast.LENGTH_SHORT).show();
+                break;
+
+
+        }
     }
 }

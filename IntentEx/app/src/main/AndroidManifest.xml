@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.gambal.intentex" >
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
 
     <application
         android:allowBackup="true"
@@ -15,6 +16,14 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".settingsactivity"
+            android:label="@string/title_activity_settingsactivity" >
+        </activity>
+        <activity
+            android:name=".appactivity"
+            android:label="@string/title_activity_appactivity" >
         </activity>
     </application>
 
